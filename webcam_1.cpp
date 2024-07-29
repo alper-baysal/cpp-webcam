@@ -2,9 +2,9 @@
 
 #include<opencv2/opencv.hpp>
 
-usingnamespacecv;
+usingnamespace cv;
 
-usingnamespacestd;
+usingnamespace std;
 
 intmain() {
 
@@ -50,7 +50,7 @@ intmain() {
 
     // 's' tuşuna basıldığında görüntüyü kaydet
 
-    char key =cv::waitKey(100);  // Bekleme süresini biraz artırdık
+    char key = waitKey(100);  // Bekleme süresini biraz artırdık
 
     if (key =='s') {
 
