@@ -2,11 +2,11 @@
 
 #include<opencv2/opencv.hpp>
 
-usingnamespace cv;
+using namespace cv;
 
-usingnamespace std;
+using namespace std;
 
-intmain() {
+int main() {
 
     // VideoCapture nesnesini oluştur ve kamerayı aç
 
@@ -18,7 +18,7 @@ intmain() {
 
     cerr <<"Kamera acilamadi!"<< endl;
 
-    return-1;
+    return -1;
 
     }
 
@@ -28,7 +28,7 @@ intmain() {
 
     while (true) {
 
-    cv::Mat videoGoruntu;
+    Mat videoGoruntu;
 
     // Kameradan görüntü oku
 
@@ -58,7 +58,7 @@ intmain() {
 
     // Görüntüyü kaydet ve başarılı olup olmadığını kontrol et
 
-    bool kaydedildi =cv::imwrite(dosyaAdi, videoGoruntu);
+    bool kaydedildi = imwrite(dosyaAdi, videoGoruntu);
 
     if (kaydedildi) {
 
